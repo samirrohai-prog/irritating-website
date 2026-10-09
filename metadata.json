@@ -1,0 +1,6 @@
+{
+  "name": "Kartastrophe.in",
+  "description": "Kartastrophe.in — India's most hilariously terrible 10-minute quick-commerce app: immortal soan papdi, Tatkal scripts, WhatsApp OTP hell, and Ramesh on his Hero Splendor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

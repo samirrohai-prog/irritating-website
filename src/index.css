@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+@keyframes bounceShort {
+  0% { transform: translateY(12px); opacity: 0; }
+  60% { transform: translateY(-4px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes desiFlash {
+  0%, 100% { border-color: #f59e0b; box-shadow: 0 0 10px #f59e0b; }
+  33% { border-color: #ef4444; box-shadow: 0 0 15px #ef4444; }
+  66% { border-color: #10b981; box-shadow: 0 0 12px #10b981; }
+}
+
+@keyframes dramaticSoapOpera {
+  0% { filter: contrast(100%) brightness(100%); transform: scale(1); }
+  15% { filter: contrast(250%) brightness(150%) hue-rotate(90deg); transform: scale(1.02); }
+  35% { filter: contrast(180%) brightness(80%) hue-rotate(270deg); transform: scale(0.99); }
+  55% { filter: contrast(280%) brightness(160%); transform: scale(1.03); }
+  75% { filter: contrast(120%) brightness(100%); transform: scale(1.01); }
+  100% { filter: contrast(100%) brightness(100%); transform: scale(1); }
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+.animate-bounce-short {
+  animation: bounceShort 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-desi-flash {
+  animation: desiFlash 1.5s infinite;
+}
+
+.animate-dramatic-soap {
+  animation: dramaticSoapOpera 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marqueeScroll 14s linear infinite;
+}
+
+/* Irritating Desi text shadow */
+.desi-comic-title {
+  text-shadow: 2px 2px 0px #b45309, 4px 4px 0px #000;
+}
